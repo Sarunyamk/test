@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form {
+            background-color: aquamarine;
+            width: 500px;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Form</h2>
+    <form action="http://jkorpela.fi/cgi-bin/echo.cgi">
+        <fieldset>
+            <legend style="text-align: center;">Register</legend>
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" required placeholder="firstname" autofocus>
+            <br><br>
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" placeholder="0000000000" pattern="[0-9]{10}" required maxlength="10">
+            <br><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="xxxxxxxxxx@gmail.com" required>
+            <br><br>
+            <label for="age">Age</label>
+            <input type="text" name="age" required placeholder="age" maxlength="2">
+            <br><br>
+            <label for="hight">Your High</label>
+            <input type="range" name="hight" min="130" max="220">
+            <br><br>
+            <label for="family">Sister-Brother</label>
+            <input type="number" name="family" min="0" max="15">
+
+
+            <p>Gender</p>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="etc">Etc
+            <br><br>
+            <p>Interest</p>
+            <input type="checkbox" name="interest" value="game">Game
+            <input type="checkbox" name="interest" value="manga">Manga
+            <input type="checkbox" name="interest" value="movie">Movie
+            <br><br>
+            <span>Country</span>
+            <select name="country" id="country" multiple size="2">
+                <option value="bangkok">Bangkok</option>
+                <option value="usa">USA</option>
+                <option value="japan">Japan</option>
+                <option value="korea">Korea</option>
+            </select>
+            <br><br>
+            <textarea name="message" id="message" rows="5" cols="40">แนะนำตนเอง</textarea>
+            <br><br>
+            <p onclick="text(this)">ลองกดดูไหม1</p>    <!--ตัวอย่างเปลี่ยนข้อความ1-->
+            <p onclick="this.innerHTML='เปลี่ยนแล้วน้า'">ลองกดดูไหม2</p>    <!--ตัวอย่างเปลี่ยนข้อความ2-->
+            <p onmouseover="over(this)" onmouseout="out(this)">ตัวอักษรจงเปลี่ยน</p>    <!--ตัวอย่างเปลี่ยนข้อความ3 เปลี่ยนเข้าออก-->
+            <button onclick="click(this)">ส่งข้อมูล</button> <input type="reset">
+        </fieldset>
+
+    </form>
+    <script>
+        function click(id) {
+            id.innerHTML = "are u sure";
+        }
+        function text(oop)
+        {
+            oop.innerHTML = "oop123"
+        }
+        function over(change)
+        {
+            change.innerHTML = "change ka"
+        }
+        function out(mouse)
+        {
+            mouse.innerHTML = "เปลี่ยนแล้วน้า"
+        }
+    </script>
+</body>
+
+</html>

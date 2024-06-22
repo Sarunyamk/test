@@ -1,0 +1,87 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css
+);
+h1{
+    color: salmon;
+    text-align: center;
+    font-family: sans-serif;
+
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    margin: 50%;
+    background-color: aqua;
+    margin-block-start: 1px;
+    margin-block-end: 1px;
+    margin-inline-start: 1px;
+
+    margin-inline-end: 1px;
+    unicode-bidi: isolate;
+    margin: 40px 20px 50px 40px;
+    padding: 20px 10px;
+    border: 5px solid blueviolet;
+    border-radius: 40px 0px;
+    outline: 6px dashed;
+    outline-offset: 5px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 5px greenyellow;
+    cursor: pointer;
+
+
+}
+
+p {
+
+    display: block;
+    background-color: tomato;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 1px;
+    margin-inline-end: 1px;
+    unicode-bidi: isolate;
+}
+
+body {
+    display: block;
+}
+
+.div1 {
+    display: block;
+    unicode-bidi: isolate;
+    width: 600px;
+    margin: 5em auto;
+    padding: 2em;
+    background-color: pink;
+    border-radius: 0.5em;
+    box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);
+}
+
+.div2 {
+    width: 600px;
+    margin: 5em auto;
+    padding: 2em;
+    display: block;
+    unicode-bidi: isolate;
+    border-radius: 0.5em;
+
+    background-color: greenyellow;
+}
+
+h1:hover {
+    background-color: blue;
+}
+
+.div3 {
+
+    display: flexbox;
+    width: 60%;
+    border: 2px solid salmon;
+
+
+}
+
+.img1 {
+    margin-left: 80px;
+    width: 15vw;
+
+}

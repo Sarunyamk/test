@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .container{
+    outline: 1px solid blue;
+    position: relative;
+    height: 100px;
+    margin-top: 5px;
+   
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px dashed red;
+    display: inline-block;
+    position: absolute;
+    
+}
+.logo{
+    left: 0;
+}
+.title{
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.link{
+    right: 0;
+} */
+ /* .container{
+    display: flex;
+    justify-content: space-between;
+ }
+ .box{
+    width: 100px;
+    height: 100px;
+    border: 1px dashed red;
+ } */

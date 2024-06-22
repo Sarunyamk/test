@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="/My form/css/style.css">
+
+<body>
+    <center>
+        <form align="left">
+            <h1 align="center">Create an account</h1>
+            <div class="single_line">
+                <input type="text" name="FirstName" id="FirstName" placeholder="FirstName" required>
+                <input type="text" name="LastName" id="LastName" placeholder="LastName" required>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <input type="password" name="re-password" id="re-password" placeholder="Re-enter Password" required>
+            </div>
+
+            <div>
+                <font style="font-size: 15px;">
+                    By clicking Sign Up ,you agree to our <a href="">Terms</a> and that you have read our <a
+                        href="">Data
+                        Policy</a> ,including our <a href="">Cookie Use</a>.
+                </font>
+            </div>
+            <br>
+
+
+
+
+
+            <button onclick="submitData()" class="button">ส่งข้อมูล</button>
+            <input type="reset">
+        </form>
+    </center>
+    <script src="index.js"></script>
+</body>
+
+</html>

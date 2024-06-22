@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div> Hello World</div>
+    ชื่อจริง<input type="text" name="firstname" id="firstname" value="sarunya">
+    
+    <script>
+        let firstnameDOM = document.getElementById('firstname')
+        console.log(firstnameDOM.value)
+    </script> -->
+
+    <!-- firstname<input class="input" type="text" name="firstname" value="mink">
+    lastname <input class="input" type="text" name="lastname" value="vajapattana">
+    <script>
+        let inputDOM = document.getElementsByClassName('input')
+        for(let s = 0 ; s < inputDOM.length ; s++)
+        {
+            console.log(inputDOM[s].value)
+        }
+    </script> -->
+
+
+    <!-- ชื่อจริง<input type="text" name="firstname" id="firstname" value="mink">
+    <script>
+        let inputselector = document.querySelector('#firstname')
+        console.log(inputselector.value)
+    </script> -->
+
+
+
+    <!-- ความสนใจ <input class="int" type="checkbox" name="interest" id="" value="หนังสือ">หนังสือ
+<input class="int" type="checkbox" name="interest" id="" value="เกม">เกม
+<input class="int" type="checkbox" name="interest" id="" value="กีฬา">กีฬา
+<input class="int" type="checkbox" name="interest" id="" value="cartoon">cartoon
+<input class="int" type="checkbox" name="interest" id="" value="anime">anime
+<script>
+    let checjboxinput = document.querySelectorAll('.int')
+    for(let i = 0 ; i<checjboxinput.length ; i++ )
+    {
+        console.log(checjboxinput[i].value)
+    }
+</script> -->
+
+    <!-- javascript event -->
+    <!-- <button onclick="userclicked()">คลิกที่นี่</button>
+ <script>
+function userclicked()
+{
+    console.log('already click')
+}
+ </script> -->
+
+    <!-- <input onchange="changegender()" type="radio" name="gender" value="ชาย">ชาย
+<input onchange="changegender()" type="radio" name="gender" value="หญิง">หญิง
+<input onchange="changegender()" type="radio" name="gender" value="ไม่ระบุเพศ">ไม่ระบุเพศ
+<script>
+function changegender()
+{
+    let genderinput = document.querySelectorAll('input[name=gender]')
+    let gender = ''
+    for (let i = 0 ;i<genderinput.length ; i++ )
+    {
+        if(genderinput[i].checked)
+        {
+            gender =genderinput[i].value
+        }
+    }
+        console.log('your gender',gender)
+}
+</script> -->
+    <!-- <input type="text" name="firstname" id="firstname" value="mink" onkeyup="changfirstname()">
+<script>
+function changfirstname()
+{
+    let firstnameDOM = document.querySelector('input[name=firstname]')
+    console.log(firstnameDOM.value)
+}
+
+</script> -->
+
+
+    <!-- <input onmouseup="downitem()" type="button" value="คลิก">
+<script>
+    function downitem()
+    {
+        console.log('คลิกแล้วนะ')
+    }
+    
+</script>  -->
+    <!-- <button onclick="clicked()">คลิก</button>
+<button id="thisbutton">กด</button>
+<script>
+    let thisbuttonDom = document.getElementById('thisbutton')
+    thisbuttonDom.addEventListener()
+function clicked()
+{
+    console.log('คลิกแล้ว')
+}
+</script> -->
+
+    <!-- <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+Mouse Over Me</div>
+
+<script>
+function mOver(obj) {
+  obj.innerHTML = "Thank You"
+}
+
+function mOut(obj) {
+  obj.innerHTML = "Mouse Over Me"
+}
+</script> -->
+
+    <!-- <div onmouseover="over(this)" onmouseout="up(this)">คลิกฉันสิ่</div>
+<script>
+    function over(obj)
+    {
+        obj.innerHTML = 'คลิกแล้วนะ คลิกอีกสิ่'
+    }
+    function up(obj)
+    {
+        obj.innerHTML = 'ให้ตายเถอะ'
+    }
+</script> -->
+
+
+
+
+    <!-- <div id="hello">Hello mink</div>
+<script>
+    let hellodom = document.getElementById('hello')
+    hellodom.innerHTML = 'sarunya'
+    console.log(hellodom.innerHTML)
+</script> -->
+
+
+
+    <!-- <div>
+        <h2>สิ่งที่สนใจ</h2>
+        <div id="content"></div>
+    </div>
+    <input type="checkbox" name="interest" value="กีฬา">กีฬา
+    <input type="checkbox" name="interest" value="หนังสือ">หนังสือ
+    <input type="checkbox" name="interest" value="เกม">เกม
+    <input type="checkbox" name="interest" value="หนัง">หนัง
+    <button onclick="summitinterest()">ส่งสิ่งที่สนใจ</button>
+    <script>
+        function summitinterest() {
+            let interestinput = document.querySelectorAll('input[name=interest]')
+            let contentHTML = '<ul>'
+            for (let i = 0; i < interestinput.length; i++) {
+                if (interestinput[i].checked) {
+                    contentHTML += '<li>' + interestinput[i].value + '</li>'
+                }
+            }
+            contentHTML += '</ul>'
+            let contentDon = document.getElementById('content')
+            contentDon.innerHTML = contentHTML
+
+        }
+    </script> -->
+    <!-- <a id="thislink" href="https://www.google.com/index.html" target="_blank">Google</a>
+<script>
+    let thislinkDom = document.getElementById('thislink')
+    console.log(thislinkDom.getAttribute('href'))
+    thislinkDom.setAttribute('href','https://docs.google.com/spreadsheets/d/15lbfDWu8dPQHeDNI2qZzK9BNViE-JUeDPXLuolxXu8E/edit?gid=676815819#gid=676815819')
+</script> -->
+
+
+    <button id="thisbutton" onclick="submitdata()">ส่งข้อมูล</button>
+    <script>
+        function submitdata() {
+            let clickDom = document.getElementById('thisbutton')
+            clickDom.style.backgroundColor = 'orange'
+
+        }
+    </script>
+
+</body>
+
+</html>

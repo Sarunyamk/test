@@ -1,0 +1,33 @@
+.Flexbox {
+    display: flex;
+    box-sizing: border-box;
+    margin: 0px -10px;
+    flex-wrap: wrap;
+
+
+}
+
+.Item {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 0x 10px;
+
+}
+
+.Item-4 {
+    width: 33.33%;
+}
+
+.Item-8 {
+    width: 66.66%;
+}
+
+
+.Content {
+    background-color: rgb(255, 255, 22);
+    border: 2px solid black;
+
+    box-sizing: border-box;
+    padding: 10px;
+}

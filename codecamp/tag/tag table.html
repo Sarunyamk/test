@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is mt first html</title>
+    <style>
+        table {
+            border: 2px solid blueviolet;
+            width: 40%;
+            border-collapse: collapse;
+            text-align: center;
+
+        }
+
+        td,
+        th {
+            font-size: 20px;
+            padding: 10px;
+            border: 2px solid blueviolet;
+            width: 30%;
+            border-collapse: collapse;
+            text-align: center;
+
+        }
+        tr:nth-child(even){
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Employee</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>lastname</th>
+                <th>age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>mink</td>
+                <td>vaja</td>
+                <td rowspan="2" >30</td>
+            </tr>
+            <tr>
+                <td>chaw</td>
+                <td>pong</td>
+                
+            </tr>
+            <tr>
+                <td>mui</td>
+                <td>vaja</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td>arty</td>
+                <td>kosit</td>
+                <td>15</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">อายุเฉลี่ย</td>
+                <td>27</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+
+
+
+</body>
+
+</html>
