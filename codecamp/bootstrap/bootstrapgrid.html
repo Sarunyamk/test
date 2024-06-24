@@ -7,16 +7,55 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .fixed {
+            position: fixed;
+        }
+
+        .center {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .inside {
+            width: 10%;
+            height: 10%;
+        }
+
+        .body1 {
+            padding: 0;
+            margin: 0;
+            height: 200vh;
+        }
+    </style>
 </head>
 
-<body>
-<div class="container">
-    <div class="row">
-       <div class=" col border border-5 bg-primary border-danger mx-2 mt-2 text-center">column1</div>
-       <div class=" col border border-5 bg-primary border-danger mx-2 mt-2 text-center">column2</div>
-       <div class=" col border border-5 bg-primary border-danger mx-2 mt-2 text-center">column3</div>
+<body class="body1 position-relative">
+    <div class="row w-25 h-25 position-absolute top-0 start-0 border border-2 border-danger bg-danger">
+        dfsdgsdgsdfg
     </div>
-</div>
+    <div class="row w-25 h-25 position-absolute top-0 end-0 border border-2 border-success bg-success">
+        dfsdgsdgsdfg
+    </div>
+    <div class="row fixed w-25 h-25 position-relative center border border-2 border-black bg-white">
+        <div class="col fixed inside position-absolute top-0 start-0 border border-2 border-danger bg-danger"></div>
+        <div class="col fixed inside position-absolute top-0 end-0 border border-2 border-success bg-success"></div>
+        <div class="col fixed inside position-absolute center border border-2 border-info bg-info">
+        </div>
+
+        <div class="col fixed inside position-absolute bottom-0 start-0 border border-2 border-primary bg-primary"></div>
+        <div class="col fixed inside position-absolute bottom-0 end-0 border border-2 border-warning bg-warning"></div>
+    </div>
+
+
+    <div class="row w-25 h-25 position-absolute bottom-0 start-0 border border-2 border-primary bg-primary">
+        dfsdgsdgsdfg
+    </div>
+    <div class="row w-25 h-25 position-absolute bottom-0 end-0 border border-2 border-warning bg-warning">
+        dfsdgsdgsdfg
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
