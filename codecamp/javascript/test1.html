@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            color: blue;
+            background-color: yellow;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        body {
+            background-color: aqua;
+
+        }
+
+        input {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <input id="in1" type="text" placeholder="text color">
+    <input id="in2" type="text" placeholder="background color">
+    <button onclick="changColor()" id="btn-changcolor">chang color</button><br>
+    <input id="in3" type="text" placeholder="font size">
+    <button onclick="changFont()" id="btn-changsize">font size</button><br>
+    <input type="reset">
+    <h2>Test</h2>
+    <script>
+        function changColor() {
+            alert("are you sure")
+            let tcolor = document.querySelector('#in1').value
+            let bcolor = document.querySelector('#in2').value
+            document.querySelector('h2').style.color = tcolor
+            document.querySelector('h2').style.backgroundColor = bcolor
+        }
+
+        function changFont() {
+            alert("are you sure")
+            let fsize = document.querySelector('#in3').value
+            document.querySelector('h2').style.fontSize = fsize
+        }
+    </script>
+</body>
+
+</html>
