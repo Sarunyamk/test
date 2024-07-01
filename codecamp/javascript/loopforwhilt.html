@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="p1"></p>
+    <script>
+        // let i = 0;
+        // while(i<3){
+        //     alert('mink');
+        //     i++;
+        // }
+
+
+        // let txt = prompt('your text')
+        // document.querySelector('#p1').innerHTML = txt
+
+        // let password = '';
+        // let i = 0;
+        // while (password !== 'mink6464') {
+        //     password = prompt('put your password')
+        //     i++;
+        //     console.log(`number of mistake ${i}`)
+        // }
+        // document.querySelector('#p1').innerText = 'ok'
+
+
+
+        // for (let a = 0; a<5;a++){    // loop ซ้อน loop
+        //     for (let b = 0; b<4;b++){
+        //         console.log(`${a},${b}`)
+        //     }
+            
+        // }
+
+
+        // let sum = 0;   // การใช้ break เมื่อ ในวงเล็บ if เป็น true ให้ break จบลูป
+        // while (true){
+        //     let value = +prompt('put number','');
+        //     if (!value) break;
+        //     sum += value;
+        // }
+        // alert('Sum : '+sum);
+
+        for (let i = 0 ; i < 10 ; i++){   //ถ้า i หาร 2 แล้วเหลือเศษ 0 ให้เด้งขึ้นไปทำด้านบนต่อ แต่ถ้าไม่ได้เหลือเศษศูนย์ ให้ลงมาทำข้างล่าง
+            if (i % 2 == 0) continue;
+            alert(i);
+        }
+
+        
+    </script>
+</body>
+
+</html>

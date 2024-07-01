@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let i = 3;
+        // while (i){
+        //     alert( i--);
+        // }
+        // console.log(i)
+
+        let player1 = prompt('player1 ทายเลข 1-100', '100');
+
+        while (true) {
+            let player2 = prompt('ทายหมายเลข 1-100ที่ player1 กรอกมา', '');
+            if (player1 === player2) {
+                alert('done')
+            } else if (player1 < player2) {
+                alert('คุณทายสูงเกินไป');
+                continue
+            } else if (player1 > player2) {
+                alert('คุณทายต่ำเกินไป');
+                continue
+            } else {
+                alert('คุณหมดสิทธิ์ทายแล้ว')
+            }
+        }
+    </script>
+</body>
+
+</html>

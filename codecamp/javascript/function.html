@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function showmessage(from,text){
+        //     alert('send by '+from +' : '+' the message is '+text)
+        // }
+        // showmessage('mink','hi baby')
+
+
+        // ตัวอย่าง 1 ถ้าผู้กรอกไม่ได้ใส่ text จะขึ้น no text
+
+        // function showmessage(from,text = 'no text'){ 
+        //     alert('send by '+from +' : '+' the message is '+text)
+        // }
+        // showmessage('mink','hi baby')
+
+
+
+        // ตัวอย่าง 2 ถ้าผู้กรอกไม่ได้ใส่ text จะขึ้น no text
+
+        // function showmessage(from,text){ 
+        //     text = text || 'no text'
+        //     alert('send by '+from +' : '+' the message is '+text)
+        // }
+        // showmessage('mink','hi baby')
+
+
+
+        //การ return ค่า function
+        // function sum(a,b){
+        //     return a+b;
+        // }
+        // let x = sum(1,2)
+        // alert(x)
+
+
+        // function checkage(age) {
+        //     if (age >= 18) {
+        //         return true;
+        //     } else {
+        //         return confirm('do you ask parent')
+        //     }
+        // }
+        // let age = prompt('how old are you');
+        // if(checkage(age)){
+        //     alert('access')
+        // }
+        // else {
+        //     alert('denied')
+        // }
+
+
+
+        // function checkage(age) {
+        //     if (age >= 18) {
+        //         return true;
+        //     } else {
+        //         return confirm('do you ask parent')
+        //     }
+        // }
+
+        // function showmovie(age){
+        //     if(!checkage(age)){
+        //         return true;
+        //     }
+        //     alert('show the movie')
+        // }
+        // showmovie(12)
+
+
+        // express function
+        // let sayhi1 = function(){
+        //     alert('hi')
+        // }
+        // sayhi1()
+
+
+
+        //call back function
+        // function ask(question,yes,no){
+        //     if(confirm(question)) {
+        //         yes()
+        //     }
+        //     else{
+        //         no()
+        //     }
+        // }
+        // function showOk(){
+        //     alert('you agree')
+        // }
+        // function showCancle(){
+        //     alert('you cancle')
+        // }
+        // ask('do you agree',showOk,showCancle);
+
+
+
+        //arrow function
+        // let sum = function(a,b){
+        //     return a+b;
+        // }
+        // alert(sum(3,4));
+
+        //แบบย่อ ไม่ต้องใส่ return แล้ว
+        // let sum = (a,b) => a+b;
+        // alert(sum(8,2))
+
+
+
+
+        //การเขียนโค้ดแบบ ไม่ nesting โค้ดไม่ซ้ำซ้อน  ตัวอย่าง
+        function pow(x, n) {
+            let result = 1;
+            for (let i = 0; i < n; i++) {
+                result *= x;
+                return result;
+            }
+        }
+        let x = prompt('x?', '')
+        let n = prompt('n?', '')
+        if (n <= 0) {
+            alert(`power ${n} is not support,
+            please enter an interger number greater than zero`);
+            alert( pow(x, n) );
+        }
+
+
+
+        // function pow(x, n) {
+        //     let result = 1;
+        //     for (let i = 0; i < n; i++) {
+        //         result *= x;
+        //         return result;
+        //     }
+        // }
+        // let x = prompt('x?', '')
+        // let n = prompt('n?', '')
+        //     (n <= 0) ? alert(`power ${n} is not support,
+        //     please enter an interger number greater than zero`) :
+        //     alert(pow(x, n));
+    </script>
+</body>
+
+</html>
